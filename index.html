@@ -180,6 +180,7 @@ footer{position:relative;background:var(--pine-deep);color:var(--cream);padding:
 @media (max-width:699px){
   .chips{display:grid;grid-template-columns:1fr 1fr}
   .chip span{height:100%;padding:8px 10px;line-height:1.2}
+  .chip.wide{grid-column:span 2}
 }
 @media (max-width:400px){
   .chip span{font-size:15px;gap:7px}
@@ -916,6 +917,7 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
     var l = document.createElement('label'); l.className = 'chip';
     l.innerHTML = '<input type="checkbox" name="svc" value="' + s + '" id="svc' + i + '"><span></span>';
     l.querySelector('span').textContent = LABELS[s];
+    if (LABELS[s].length > 16) l.className = 'chip wide';
     chips.appendChild(l);
   });
   // tapping a service row ticks it in the form
