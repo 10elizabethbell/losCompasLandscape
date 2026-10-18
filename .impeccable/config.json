@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T15:37:53.815Z",
+        "reason": "Claude: the only repeating gradient is the yard's no-JS fallback, literal lawn mow stripes in the landscaping world; removed once the canvas boots"
+      }
+    ]
+  }
+}
