@@ -61,7 +61,7 @@ section{position:relative}
 
 /* ---------- header ---------- */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);padding-top:max(12px,env(safe-area-inset-top));color:var(--cream)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand{display:flex;align-items:center;gap:10px;min-height:48px;text-decoration:none;min-width:0}
 .brand img{width:52px;height:auto;flex:none}
 .brand b{display:block;font:400 19px/1 var(--display);text-transform:uppercase;letter-spacing:.01em;white-space:nowrap}
 .brand small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft);margin-top:4px;white-space:nowrap}
@@ -153,7 +153,7 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--ember);out
 .send .btn:hover{outline:3px solid var(--ember);outline-offset:2px}
 .send .btn:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
 .note{font-size:15px;color:var(--ink-soft)}
-.note a{font-weight:700;color:var(--ink);white-space:nowrap}
+.note a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);white-space:nowrap}
 
 /* ---------- footer ---------- */
 footer{background:var(--pine-deep);color:var(--cream);padding:56px 0 calc(40px + env(safe-area-inset-bottom))}
@@ -165,6 +165,19 @@ footer{background:var(--pine-deep);color:var(--cream);padding:56px 0 calc(40px +
 .foot li a:hover{color:var(--sun);text-decoration:underline}
 .foot .muted{color:var(--cream-soft);font-size:15px}
 .copy{margin-top:30px;font-size:14px;color:var(--cream-soft)}
+
+/* ---------- small phones: keep the wordmark clear of the number ---------- */
+@media (max-width:400px){
+  :root{--gutter:16px}
+  .brand{gap:8px}
+  .brand img{width:42px}
+  .brand b{font-size:16px}
+  .brand small{font-size:10.5px;letter-spacing:.1em}
+  .tel{font-size:15px;gap:5px}
+  .tel svg{width:16px;height:16px}
+  .btn{font-size:15px;padding:0 10px;gap:6px}
+  .btn svg{width:18px;height:18px}
+}
 
 /* ---------- larger screens ---------- */
 @media (min-width:700px){
