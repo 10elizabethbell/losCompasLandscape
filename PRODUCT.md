@@ -4,7 +4,7 @@
 web
 
 ## Stack
-Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking, system fonts. Hosted on GitHub Pages.
+Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking. Display face Alfa Slab One self-hosted inline (matches the logo lettering); body in the system font stack. Hosted on GitHub Pages.
 
 ## Users
 - **Homeowners around North Brunswick, NJ** who want a patio, driveway, retaining wall, fence or garden built, or regular lawn care, mulching, seasonal cleanup and snow removal. They mostly find the link on Facebook on their phone (in-app browser, cellular).
