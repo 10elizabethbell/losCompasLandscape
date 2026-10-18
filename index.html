@@ -88,7 +88,7 @@ section{position:relative}
 .yard{position:relative;height:clamp(250px,40svh,420px);margin-top:-6px}
 .yard canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 .yard-still{position:absolute;inset:var(--fringe) 0 0;background:
-  repeating-linear-gradient(90deg,#4a8a3a 0 38px,#3d7631 38px 76px)}
+  repeating-linear-gradient(90deg,#47873a 0 36px,#3a7431 36px 72px)}
 .hint{position:absolute;left:calc(var(--gutter) - 14px);bottom:calc(var(--fringe) - 2px);margin:0;padding:10px 14px;font-size:14px;font-weight:600;color:#fff;background:radial-gradient(closest-side,rgba(19,58,34,.82),rgba(19,58,34,0));text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none;transition:opacity .6s ease}
 .hint.gone{opacity:0}
 
@@ -910,7 +910,7 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
    Estimate form → a pre-written text message
    ========================================================= */
 (function(){
-  var SERVICES = ['Pavers & patios','Driveway','Retaining wall','Fence','Garden design','Lawn mowing','Lawn care','Mulching','Snow removal','Seasonal cleanup'];
+  var SERVICES = ['Pavers & patios','Driveway','Retaining wall','Fence','Garden design','Lawn mowing','Lawn care','Mulching','Seasonal cleanup','Snow removal'];
   var LABELS = {'Pavers & patios':'Pavers & patios','Driveway':'Driveways','Retaining wall':'Retaining walls','Fence':'Fences','Garden design':'Garden design','Lawn mowing':'Lawn mowing','Lawn care':'Lawn care','Mulching':'Mulching','Seasonal cleanup':'Spring & fall cleanup','Snow removal':'Snow removal'};
   var chips = document.getElementById('chips'), form = document.getElementById('quote');
   SERVICES.forEach(function(s, i){

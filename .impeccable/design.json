@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T15:57:14.372084+00:00",
+  "title": "Design System: Los Compas Landscape LLC",
+  "extensions": {
+    "colorMeta": {
+      "pine": {
+        "role": "neutral",
+        "displayName": "Pine",
+        "canonical": "#133a22",
+        "tonalRamp": [
+          "#133a22",
+          "#21663c",
+          "#309155",
+          "#3ebd6f",
+          "#68ce8f",
+          "#94dcb0",
+          "#c0ead0",
+          "#ecf9f1"
+        ]
+      },
+      "pine-deep": {
+        "role": "neutral",
+        "displayName": "Deep Pine",
+        "canonical": "#0e2d1a",
+        "tonalRamp": [
+          "#123a22",
+          "#20673b",
+          "#2e9355",
+          "#3cc06f",
+          "#66cf8f",
+          "#93ddb0",
+          "#bfebd0",
+          "#ecf9f1"
+        ]
+      },
+      "moss": {
+        "role": "neutral",
+        "displayName": "Moss",
+        "canonical": "#2c5b3b",
+        "tonalRamp": [
+          "#193421",
+          "#2c5b3b",
+          "#3f8254",
+          "#52a96e",
+          "#78be8e",
+          "#9fd1af",
+          "#c7e4d0",
+          "#eef7f1"
+        ]
+      },
+      "meadow": {
+        "role": "neutral",
+        "displayName": "Meadow",
+        "canonical": "#eeeedb",
+        "tonalRamp": [
+          "#343419",
+          "#5c5c2b",
+          "#83833e",
+          "#abab51",
+          "#bfbf77",
+          "#d1d19e",
+          "#e4e4c6",
+          "#f7f7ee"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field",
+        "canonical": "#fbfaf1",
+        "tonalRamp": [
+          "#3b3711",
+          "#69611e",
+          "#968b2b",
+          "#c3b638",
+          "#d2c763",
+          "#dfd891",
+          "#ece8be",
+          "#f9f8eb"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Forest Ink",
+        "canonical": "#16321f",
+        "tonalRamp": [
+          "#173521",
+          "#295e3a",
+          "#3b8653",
+          "#4daf6c",
+          "#74c28d",
+          "#9cd4ae",
+          "#c5e5cf",
+          "#edf7f0"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#3e5847",
+        "tonalRamp": [
+          "#202d24",
+          "#384f40",
+          "#50715b",
+          "#689377",
+          "#89ac95",
+          "#acc4b4",
+          "#cedcd3",
+          "#f0f4f2"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "#f7efd9",
+        "tonalRamp": [
+          "#3f320d",
+          "#6f5817",
+          "#9f7e22",
+          "#d0a42c",
+          "#dcb959",
+          "#e6ce8a",
+          "#f0e2ba",
+          "#fbf6ea"
+        ]
+      },
+      "cream-soft": {
+        "role": "neutral",
+        "displayName": "Sage Cream",
+        "canonical": "#cfd8c4",
+        "tonalRamp": [
+          "#272e1e",
+          "#455136",
+          "#63744d",
+          "#809764",
+          "#9daf86",
+          "#b9c6a9",
+          "#d6decd",
+          "#f3f5f0"
+        ]
+      },
+      "sun": {
+        "role": "primary",
+        "displayName": "Sunset Gold",
+        "canonical": "#f3a93c",
+        "tonalRamp": [
+          "#482d04",
+          "#7f4f08",
+          "#b6710b",
+          "#ed930f",
+          "#f3ac42",
+          "#f7c479",
+          "#fadcb0",
+          "#fef4e7"
+        ]
+      },
+      "sun-deep": {
+        "role": "primary",
+        "displayName": "Burnt Gold",
+        "canonical": "#e48f1f",
+        "tonalRamp": [
+          "#442a08",
+          "#784b0e",
+          "#ac6b15",
+          "#e08b1b",
+          "#e9a64c",
+          "#f0c080",
+          "#f6dab4",
+          "#fcf4e8"
+        ]
+      },
+      "mark": {
+        "role": "secondary",
+        "displayName": "Field Blue",
+        "canonical": "#2563a8",
+        "tonalRamp": [
+          "#0e253f",
+          "#18416e",
+          "#235d9e",
+          "#2d79ce",
+          "#5b97db",
+          "#8bb6e5",
+          "#bad4f0",
+          "#eaf2fa"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Rust Error",
+        "canonical": "#a3310f",
+        "tonalRamp": [
+          "#461506",
+          "#7b250b",
+          "#b13510",
+          "#e64515",
+          "#ee6e48",
+          "#f3987d",
+          "#f8c2b2",
+          "#fdede8"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "rgba(22,50,31,.16)",
+        "tonalRamp": [
+          "#173521",
+          "#295e3a",
+          "#3b8653",
+          "#4daf6c",
+          "#74c28d",
+          "#9cd4ae",
+          "#c5e5cf",
+          "#edf7f0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline on phones, uppercase slab."
+      },
+      "display-wide": {
+        "displayName": "Display (wide)",
+        "purpose": "Hero headline from 1024px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Group and step headings, footer name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs."
+      },
+      "body-lead": {
+        "displayName": "Lead",
+        "purpose": "Hero promise line."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Service row labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, header number."
+      }
+    },
+    "shadows": [
+      {
+        "name": "proof-card-lift",
+        "value": "0 10px 22px -12px rgba(0,0,0,.35)",
+        "purpose": "The Facebook card on meadow; the only lifted UI surface."
+      },
+      {
+        "name": "hint-glow",
+        "value": "radial-gradient(closest-side, rgba(19,58,34,.82), rgba(19,58,34,0)); text-shadow: 0 1px 2px rgba(0,0,0,.5)",
+        "purpose": "Keeps the drag hint readable over leaves."
+      },
+      {
+        "name": "leaf-contact",
+        "value": "rgba(20,28,10,.32) blur(s*.06) offset (s*.06, s*.1)",
+        "purpose": "Baked under every leaf sprite."
+      },
+      {
+        "name": "leaf-airborne",
+        "value": "rgba(15,22,8,.35) blur(s*.12), offset z*.35, alpha max(.15, 1 - z/150)",
+        "purpose": "Shadow cast by leaves in the air."
+      },
+      {
+        "name": "patio-edge",
+        "value": "rgba(10,25,8,.45) blur 10 offsetY 3",
+        "purpose": "Patio sitting in the lawn."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "background-color .18s ease, color .18s ease, border-color .18s ease, transform .12s ease",
+        "purpose": "Buttons, arrows, cards."
+      },
+      {
+        "name": "field-transition",
+        "value": "border-color .15s ease, box-shadow .15s ease",
+        "purpose": "Inputs and chips."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px)",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "hint-fade",
+        "value": "opacity .6s ease",
+        "purpose": "Drag hint disappears on first touch."
+      },
+      {
+        "name": "loop",
+        "value": "single requestAnimationFrame, dt clamped to 50ms, IntersectionObserver rootMargin 80px",
+        "purpose": "Every canvas scene ticks from one loop and only while visible."
+      },
+      {
+        "name": "gust",
+        "value": "max(0, sin(.45t) * sin(.17t + 2))",
+        "purpose": "Page-wide wind shared by yard leaves and grass edges."
+      },
+      {
+        "name": "blade-spring",
+        "value": "stiffness 38, damping 6.5, max lean 0.8h",
+        "purpose": "Grass parting around the pointer."
+      },
+      {
+        "name": "CFG",
+        "value": "LEAVES_PHONE 380, LEAVES_DESK 600, LEAF_PHONE 22, LEAF_DESK 28, REGROW 7, AIRBORNE_PHONE 3, AIRBORNE_DESK 8, EDGE_LEAVES 10, BLOW_RADIUS 70, BLOW_FORCE 2600, BLOW_CARRY 0.55, LIFT 70, AUTO_IDLE_MS 7000, AUTO_SPEED 0.5, AUTO_REST_AT 0.75, AUTO_RESUME_AT 0.9, BLADE_GAP 4, SWAY 1.0, SWAY_SPEED 1.0",
+        "purpose": "Tunables for the yard and grass edges."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "no loop; one still frame per canvas; transitions and smooth scroll off",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone",
+        "value": "max-width: 400px"
+      },
+      {
+        "name": "chips-grid",
+        "value": "max-width: 699px"
+      },
+      {
+        "name": "tablet",
+        "value": "700px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "yard-desk",
+        "value": "600px (canvas width)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold filled action: hero \"Free estimate\" and the form send button.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-sun\" href=\"#\">Free estimate</a></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-dark{background:var(--pine);padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 22px;border-radius:14px;border:2px solid var(--sun);font:700 16px/1.15 var(--body);text-decoration:none;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .12s ease}.ds-btn:active{transform:translateY(1px)}.ds-btn-sun{background:var(--sun);color:var(--ink)}.ds-btn-sun:hover{background:var(--sun-deep);border-color:var(--sun-deep)}.ds-btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The hero's one secondary action (WhatsApp), outlined on pine.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-line\" href=\"#\">WhatsApp us</a></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-dark{background:var(--pine);padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 22px;border-radius:14px;border:2px solid var(--cream-soft);font:700 16px/1.15 var(--body);text-decoration:none;transition:color .18s ease,border-color .18s ease}.ds-btn-line{background:transparent;color:var(--cream)}.ds-btn-line:hover{border-color:var(--sun);color:var(--sun)}.ds-btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Tappable service item; only the arrow circle responds on hover and focus.",
+      "html": "<div class=\"ds-light\"><a class=\"ds-row\" href=\"#\">Pavers &amp; patios<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Driveways<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-light{background:var(--meadow);padding:16px 20px}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:8px 0;border-bottom:1px solid var(--rule);text-decoration:none;font:600 20px var(--body);color:var(--ink)}.ds-row:first-child{border-top:1px solid var(--rule)}.ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--rule);transition:background-color .18s ease,border-color .18s ease}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--sun);border-color:var(--sun)}.ds-row:focus-visible .ds-arrow{outline:3px solid var(--mark);outline-offset:3px}"
+    },
+    {
+      "name": "Facebook Proof Card",
+      "kind": "card",
+      "refersTo": "facebook-card",
+      "description": "Pine card under the services linking to the crew's Facebook work.",
+      "html": "<div class=\"ds-light\"><a class=\"ds-fb\" href=\"#\"><span class=\"ds-t\">Follow our work on Facebook</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-light{background:var(--meadow);padding:24px}.ds-fb{display:flex;align-items:center;gap:16px;min-height:88px;padding:18px 20px;border-radius:18px;background:var(--pine);color:var(--cream);text-decoration:none;box-shadow:0 10px 22px -12px rgba(0,0,0,.35);transition:background-color .18s ease}.ds-fb:hover{background:var(--moss)}.ds-t{flex:1;font:400 20px/1.15 var(--display)}.ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(247,239,217,.35);transition:background-color .18s ease}.ds-fb:hover .ds-arrow{background:var(--sun);border-color:var(--sun);color:var(--ink)}.ds-fb:focus-visible{outline:3px solid var(--mark);outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Estimate form field; Field Blue on hover and focus, rust on error.",
+      "html": "<div class=\"ds-light\"><label class=\"ds-lbl\" for=\"ds-n\">Your name</label><input id=\"ds-n\" class=\"ds-in\" type=\"text\" placeholder=\"First and last name\"></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-light{background:var(--meadow);padding:24px}.ds-lbl{display:block;font:700 16px var(--body);color:var(--ink);margin-bottom:8px}.ds-in{width:100%;min-height:54px;padding:13px 15px;border:2px solid rgba(22,50,31,.28);border-radius:12px;background:#fbfaf1;color:var(--ink);font:17px/1.4 var(--body);caret-color:var(--mark);transition:border-color .15s ease}.ds-in::placeholder{color:#5d6c60}.ds-in:hover{border-color:var(--mark)}.ds-in:focus{border-color:var(--mark);outline:2px solid var(--mark);outline-offset:2px}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "choice-chip",
+      "description": "Checkbox tile for picking services in the form.",
+      "html": "<div class=\"ds-light\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Mulching</span></label> <label class=\"ds-chip\"><input type=\"checkbox\"><span>Fences</span></label></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-light{background:var(--meadow);padding:24px}.ds-chip{position:relative;display:inline-block}.ds-chip input{position:absolute;opacity:0;width:1px;height:1px}.ds-chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 15px;border:2px solid rgba(22,50,31,.28);border-radius:12px;background:#fbfaf1;font:600 16px var(--body);color:var(--ink);cursor:pointer;transition:border-color .15s ease,background-color .15s ease}.ds-chip span::before{content:'';width:16px;height:16px;border-radius:4px;border:2px solid rgba(22,50,31,.45)}.ds-chip:hover span{border-color:var(--mark)}.ds-chip input:focus-visible+span{border-color:var(--mark);outline:2px solid var(--mark);outline-offset:2px}.ds-chip input:checked+span{background:#f6e2bd;border-color:var(--mark)}.ds-chip input:checked+span::before{background:var(--mark);border-color:var(--mark)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Badge and wordmark left, tap-to-call number top right; the only phone number on the first screen.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span><b>Los Compas</b><small>Landscape LLC</small></span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.2 15.2 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z\"/></svg><span>732-527-2548</span></a></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;background:var(--pine);color:var(--cream)}.ds-brand{text-decoration:none;color:inherit}.ds-brand b{display:block;font:400 19px/1 var(--display);text-transform:uppercase}.ds-brand small{display:block;font:12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft);margin-top:4px}.ds-tel{display:flex;align-items:center;gap:7px;min-height:44px;font:700 16px var(--body);color:var(--cream);text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel svg{color:var(--sun)}.ds-tel:hover span{text-decoration:underline}.ds-tel:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Grass Edge (static)",
+      "kind": "custom",
+      "refersTo": "grass-edge",
+      "description": "Section boundary: blades in the lower section's color growing into the one above. Live version is a canvas; this is a static impression.",
+      "html": "<div class=\"ds-edge\"><div class=\"ds-up\"></div><div class=\"ds-blades\"></div><div class=\"ds-low\"></div></div>",
+      "css": ":host{--pine:#133a22;--pine-deep:#0e2d1a;--moss:#2c5b3b;--meadow:#eeeedb;--ink:#16321f;--ink-soft:#3e5847;--cream:#f7efd9;--cream-soft:#cfd8c4;--sun:#f3a93c;--sun-deep:#e48f1f;--mark:#2563a8;--error:#a3310f;--rule:rgba(22,50,31,.16);--display:'Alfa Slab One',Rockwell,Georgia,serif;--body:system-ui,-apple-system,'Segoe UI',Arial,sans-serif} .ds-up{height:40px;background:var(--meadow)}.ds-blades{height:30px;margin-top:-30px;background:repeating-linear-gradient(90deg,transparent 0 1px,var(--pine) 1px 4px);-webkit-mask:linear-gradient(to top,#000 20%,transparent);mask:linear-gradient(to top,#000 20%,transparent)}.ds-low{height:40px;background:var(--pine)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Yard After the Leaves Come Off",
+    "overview": "This is the logo's world laid out as a page: a deep pine ground taken from the badge's ring, cream slab lettering taken from its wordmark, and the badge's sunset gold kept for the things you press. Light sections are a cream tinted toward the lawn. The first screen ends in a real yard, drawn live: a herringbone paver patio with a charcoal soldier border, set in a mowed lawn and covered in fall leaves. The visitor sweeps it clean with a finger. Every section boundary on the page is a strip of swaying grass, so the yard continues the whole way down.\n\nDensity is phone-first and plain. One column on phones, big tap targets (56px buttons, 58px rows), short service items, and a single estimate form that writes a text message. The type is loud only in the display face; everything you read or tap is in the system sans. Depth comes from the scene itself (baked leaf shadows, patio edge shadow, airborne leaves casting offset shadows), not from cards floating on the page.\n\nThe build rejects the landscaper template its predecessor was: no stock lawn photo, no counters, no icon-card grids.",
+    "keyCharacteristics": [
+      "Two grounds only: pine (dark) and meadow (light), alternating, every boundary a grass edge.",
+      "Alfa Slab One, uppercase, for headings; system sans for all reading and controls.",
+      "Gold is the action color; blue is the form's outline color; red appears only in errors.",
+      "One live signature scene (the yard) plus one recurring living divider (the grass edge), driven by one pointer and one animation loop.",
+      "Nothing moves under `prefers-reduced-motion`: the yard draws once as a still picture and the dividers render a single frame."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Acts Rule",
+        "body": "Gold marks what you press. It fills the primary button, and appears on other controls only as a response (hover, focus). An arrow, link or icon never sits gold at rest, except the small phone glyph beside the header number.",
+        "section": "colors"
+      },
+      {
+        "name": "The Blue Form Rule",
+        "body": "Every control inside the estimate form outlines in Field Blue on hover and on focus. Blue belongs to the form and to focus on light grounds; it never appears in the hero, rows or cards.",
+        "section": "colors"
+      },
+      {
+        "name": "The Red Means Wrong Rule",
+        "body": "In UI chrome, red is only for errors. The rust and red of the leaves are scene material inside the canvas and are exempt; do not borrow them for buttons, badges or highlights.",
+        "section": "colors"
+      },
+      {
+        "name": "The Slab Speaks Uppercase Rule",
+        "body": "Alfa Slab One is used only at weight 400 and only for headings, the wordmark, the Facebook card line and the step numerals. Section and hero headings are uppercase; body copy, labels and buttons never use the slab.",
+        "section": "typography"
+      },
+      {
+        "name": "The Text-Wrap Balance Rule",
+        "body": "All `h1-h3` use `text-wrap: balance`; no orphaned single word on a heading line.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Number Up Top Rule",
+        "body": "On the first screen the phone number appears once, as a tap-to-call text link in the top-right of the header. There is never a Call button under the headline. The footer may repeat it.",
+        "section": "layout"
+      },
+      {
+        "name": "The Two Buttons Rule",
+        "body": "The hero carries at most two buttons, side by side: the filled gold primary and one outlined secondary. Nothing goes under them but the yard.",
+        "section": "layout"
+      },
+      {
+        "name": "The Footer Email Rule",
+        "body": "The email address exists only in the footer link list. No email buttons, prompts or \"send by email\" options anywhere else.",
+        "section": "layout"
+      },
+      {
+        "name": "The Depth Lives In The Yard Rule",
+        "body": "Shadows are physical: cast by stones and leaves inside the canvas. UI surfaces stay flat, with the single exception of the proof card.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** alternate pine and meadow grounds and put a grass edge on the top of every section after the hero, colored by the rule above.",
+      "**Do** keep the phone number as a text `tel:` link in the top-right of the header, once on the first screen.",
+      "**Do** cap the hero at two side-by-side buttons: filled gold primary, outlined secondary.",
+      "**Do** outline every form control (inputs, chips, the send button) in Field Blue on hover and on focus.",
+      "**Do** let service rows respond only through the arrow circle filling gold; put the focus ring on the arrow.",
+      "**Do** keep the Facebook proof card directly under the services, plus a Facebook link in the footer.",
+      "**Do** keep the email in the footer and nowhere else.",
+      "**Do** route new animation through the shared pointer `P`, the single `Loop` and `Gust(t)`, expose new feel parameters in `CFG`, and paint one still frame under reduced motion.",
+      "**Do** keep anything airborne in a grass edge inside its strip, clear of headings and text.",
+      "**Do** draw natural things with curves and baked shading (leaf sprites, superellipse patio, curved blades)."
+    ],
+    "donts": [
+      "**Don't** put a Call button under the hero headline, a sticky bottom contact bar, or a third hero button.",
+      "**Don't** outline, ring, tint or border-shift a whole service row on hover or focus.",
+      "**Don't** use red anywhere in the UI except errors (the leaves' rust and red are scene material, not UI color).",
+      "**Don't** use gold as a resting fill on arrows, links or icons; it appears on hover and focus.",
+      "**Don't** use blue outside the form and light-ground focus.",
+      "**Don't** set body copy, labels or buttons in Alfa Slab One, or set the slab in any weight but 400.",
+      "**Don't** add drop shadows to UI surfaces beyond the proof card; depth belongs to the yard.",
+      "**Don't** add stock photos, counters, or icon-card grids.",
+      "**Don't** let a vertical drag in the yard scroll the page."
+    ]
+  }
+}
