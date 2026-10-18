@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-10-18T15:37:53.815Z",
         "reason": "Claude: the only repeating gradient is the yard's no-JS fallback, literal lawn mow stripes in the landscaping world; removed once the canvas boots"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T15:48:13.485Z",
+        "reason": "Claude: Ellie's pitch-site finishing-rules require text over the scene to get 'a soft glow in the ground color'; this is the pine backing behind the 'Drag to clear the leaves' hint over the leaf canvas"
       }
     ]
   }
