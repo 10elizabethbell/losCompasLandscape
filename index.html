@@ -910,14 +910,14 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
    Estimate form → a pre-written text message
    ========================================================= */
 (function(){
-  var SERVICES = ['Pavers & patios','Driveway','Retaining wall','Fence','Garden design','Lawn mowing','Lawn care','Mulching','Seasonal cleanup','Snow removal'];
+  var SERVICES = ['Pavers & patios','Driveway','Retaining wall','Fence','Garden design','Lawn mowing','Lawn care','Mulching','Snow removal','Seasonal cleanup'];
   var LABELS = {'Pavers & patios':'Pavers & patios','Driveway':'Driveways','Retaining wall':'Retaining walls','Fence':'Fences','Garden design':'Garden design','Lawn mowing':'Lawn mowing','Lawn care':'Lawn care','Mulching':'Mulching','Seasonal cleanup':'Spring & fall cleanup','Snow removal':'Snow removal'};
   var chips = document.getElementById('chips'), form = document.getElementById('quote');
   SERVICES.forEach(function(s, i){
     var l = document.createElement('label'); l.className = 'chip';
     l.innerHTML = '<input type="checkbox" name="svc" value="' + s + '" id="svc' + i + '"><span></span>';
     l.querySelector('span').textContent = LABELS[s];
-    if (LABELS[s].length > 16) l.className = 'chip wide';
+    if (LABELS[s].length > 16 || s === 'Snow removal') l.className = 'chip wide';   // the two seasonal jobs close the list at full width
     chips.appendChild(l);
   });
   // tapping a service row ticks it in the form
