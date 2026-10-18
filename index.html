@@ -30,7 +30,8 @@
   --cream-soft:#cfd8c4;
   --sun:#f3a93c;         /* the logo's sunset: buttons, hover accents */
   --sun-deep:#e48f1f;
-  --ember:#c4421d;       /* form outlines: stands apart from the gold button */
+  --mark:#2563a8;        /* form outlines and focus on light grounds: blue, apart from the gold button and the red errors */
+  --error:#a3310f;
   --rule:rgba(22,50,31,.16);
   --display:"Alfa Slab One",Rockwell,Georgia,serif;
   --body:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
@@ -62,7 +63,7 @@ section{position:relative}
 /* ---------- header ---------- */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gutter);padding-top:max(12px,env(safe-area-inset-top));color:var(--cream)}
 .brand{display:flex;align-items:center;gap:10px;min-height:48px;text-decoration:none;min-width:0}
-.brand img{width:52px;height:auto;flex:none}
+.brand img{width:48px;height:auto;flex:none}
 .brand b{display:block;font:400 19px/1 var(--display);text-transform:uppercase;letter-spacing:.01em;white-space:nowrap}
 .brand small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft);margin-top:4px;white-space:nowrap}
 .tel{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -88,7 +89,7 @@ section{position:relative}
 .yard canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 .yard-still{position:absolute;inset:var(--fringe) 0 0;background:
   repeating-linear-gradient(90deg,#4a8a3a 0 38px,#3d7631 38px 76px)}
-.hint{position:absolute;left:calc(var(--gutter) - 14px);bottom:8px;margin:0;padding:10px 14px;font-size:14px;font-weight:600;color:#fff;background:radial-gradient(closest-side,rgba(19,58,34,.82),rgba(19,58,34,0));text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none;transition:opacity .6s ease}
+.hint{position:absolute;left:calc(var(--gutter) - 14px);bottom:calc(var(--fringe) - 2px);margin:0;padding:10px 14px;font-size:14px;font-weight:600;color:#fff;background:radial-gradient(closest-side,rgba(19,58,34,.82),rgba(19,58,34,0));text-shadow:0 1px 2px rgba(0,0,0,.5);pointer-events:none;transition:opacity .6s ease}
 .hint.gone{opacity:0}
 
 /* ---------- services ---------- */
@@ -127,28 +128,30 @@ form{margin-top:28px;display:grid;gap:22px;max-width:620px}
 .field label,.field legend{display:block;font-weight:700;font-size:16px;margin-bottom:8px;padding:0}
 .field .opt{font-weight:400;color:var(--ink-soft)}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-input[type=text],textarea{width:100%;min-height:54px;padding:13px 15px;border:2px solid rgba(22,50,31,.28);border-radius:12px;background:#fbfaf1;color:var(--ink);font:17px/1.4 var(--body);caret-color:var(--ember);transition:border-color .15s ease,box-shadow .15s ease}
+input[type=text],textarea{width:100%;min-height:54px;padding:13px 15px;border:2px solid rgba(22,50,31,.28);border-radius:12px;background:#fbfaf1;color:var(--ink);font:17px/1.4 var(--body);caret-color:var(--mark);transition:border-color .15s ease,box-shadow .15s ease}
 textarea{min-height:110px;resize:vertical}
-input[type=text]::placeholder,textarea::placeholder{color:#6b7a6e}
-input[type=text]:hover,textarea:hover{border-color:var(--ember)}
-input[type=text]:focus,textarea:focus{outline:none;border-color:var(--ember);outline:2px solid var(--ember);outline-offset:2px}
+input[type=text]::placeholder,textarea::placeholder{color:#5d6c60}
+input[type=text]:hover,textarea:hover{border-color:var(--mark)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--mark);outline:2px solid var(--mark);outline-offset:2px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
 .chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 15px;border:2px solid rgba(22,50,31,.28);border-radius:12px;background:#fbfaf1;font-size:16px;font-weight:600;cursor:pointer;transition:border-color .15s ease,background-color .15s ease}
 .chip span::before{content:"";width:16px;height:16px;border-radius:4px;border:2px solid rgba(22,50,31,.45);flex:none;transition:background-color .15s ease,border-color .15s ease}
-.chip:hover span{border-color:var(--ember)}
-.chip input:focus-visible+span{border-color:var(--ember);outline:2px solid var(--ember);outline-offset:2px}
-.chip input:checked+span{background:#f6e2bd;border-color:var(--sun-deep)}
-.chip input:checked+span::before{background:var(--ember) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--ember)}
-.err{display:none;margin-top:8px;color:#a3310f;font-weight:600;font-size:15px}
+.chip:hover span{border-color:var(--mark)}
+.chip input:focus-visible+span{border-color:var(--mark);outline:2px solid var(--mark);outline-offset:2px}
+.chip input:checked+span{background:#f6e2bd;border-color:var(--mark)}
+.chip input:checked+span::before{background:var(--mark) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--mark)}
+.err{display:none;margin-top:8px;color:var(--error);font-weight:600;font-size:15px}
 .bad .err{display:block}
-.bad input[type=text],.bad textarea{border-color:#a3310f}
+.bad input[type=text],.bad textarea{border-color:var(--error)}
+.bad legend{color:var(--error)}
 .send{display:grid;gap:12px}
 .send .btn{width:100%}
-.send .btn:hover{outline:3px solid var(--ember);outline-offset:2px}
-.send .btn:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+.send .btn:hover{outline:3px solid var(--mark);outline-offset:2px}
+.send .btn:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
 .note{font-size:15px;color:var(--ink-soft)}
+.alt{font-size:16px;color:var(--ink)}
 .note a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);white-space:nowrap}
 
 /* ---------- footer ---------- */
@@ -166,7 +169,7 @@ footer{position:relative;background:var(--pine-deep);color:var(--cream);padding:
 @media (max-width:400px){
   :root{--gutter:16px}
   .brand{gap:8px}
-  .brand img{width:42px}
+  .brand img{width:44px}
   .brand b{font-size:16px}
   .brand small{font-size:11px;letter-spacing:.08em}
   .tel{font-size:15px;gap:5px}
@@ -178,7 +181,7 @@ footer{position:relative;background:var(--pine-deep);color:var(--cream);padding:
   .chips{display:grid;grid-template-columns:1fr 1fr}
   .chip span{height:100%;padding:8px 12px;line-height:1.2}
 }
-.light :focus-visible,.light .row:focus-visible .arrow{outline-color:var(--ember)}
+.light :focus-visible,.light .row:focus-visible .arrow{outline-color:var(--mark)}
 
 /* ---------- larger screens ---------- */
 @media (min-width:700px){
@@ -194,7 +197,7 @@ footer{position:relative;background:var(--pine-deep);color:var(--cream);padding:
   .hero-copy{align-self:center;padding:40px 24px 80px max(var(--gutter),calc((100vw - 1180px)/2 + var(--gutter)))}
   .hero h1{font-size:clamp(54px,4.8vw,74px)}
   .yard{height:auto;margin:0;min-height:560px;border-top-left-radius:28px;overflow:hidden}
-  .hint{bottom:calc(var(--fringe) + 6px);left:16px}
+  .hint{bottom:calc(var(--fringe) + 4px);left:16px}
   .estimate .inner{display:grid;grid-template-columns:5fr 7fr;gap:64px}
   form{margin-top:0}
 }
@@ -217,7 +220,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <header class="hero dark" id="top">
   <div class="top">
     <a class="brand" href="#top" aria-label="Los Compas Landscape LLC, back to top">
-      <img src="assets/logo.webp" width="359" height="278" alt="Los Compas Landscape LLC logo">
+      <img src="assets/badge.webp" width="112" height="112" alt="Los Compas Landscape LLC logo">
       <span><b>Los Compas</b><small>Landscape LLC</small></span>
     </a>
     <a class="tel" href="tel:+17325272548" aria-label="Call 732-527-2548">
@@ -302,17 +305,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <form id="quote" novalidate>
         <div class="field" id="f-name">
           <label for="name">Your name</label>
-          <input type="text" id="name" name="name" autocomplete="name" placeholder="First and last name">
-          <p class="err" id="e-name">Add your name so we know who's texting.</p>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="First and last name" aria-describedby="e-name">
+          <p class="err" id="e-name" role="alert">Add your name so we know who's texting.</p>
         </div>
         <div class="field">
           <label for="town">Where's the yard? <span class="opt">(town is enough)</span></label>
           <input type="text" id="town" name="town" autocomplete="address-level2" placeholder="North Brunswick">
         </div>
-        <fieldset class="field" id="f-svc">
+        <fieldset class="field" id="f-svc" tabindex="-1" aria-describedby="e-svc">
           <legend>What do you need?</legend>
           <div class="chips" id="chips"></div>
-          <p class="err" id="e-svc">Pick at least one, or describe the job below.</p>
+          <p class="err" id="e-svc" role="alert">Pick at least one, or describe the job below.</p>
         </fieldset>
         <div class="field">
           <label for="details">About the job <span class="opt">(optional)</span></label>
@@ -320,6 +323,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         </div>
         <div class="send">
           <button class="btn btn-sun" type="submit">Text this to us</button>
+          <p class="note alt" id="alt" hidden>Messages didn't open? <a href="https://wa.me/17325272548">Send it on WhatsApp instead</a></p>
           <p class="note">Opens your messages with all of this filled in. Nothing sends until you press send. Rather talk? <a href="tel:+17325272548">Call 732-527-2548</a></p>
         </div>
       </form>
@@ -381,12 +385,13 @@ var P = {x:-9999, y:-9999, vx:0, vy:0, t:0, down:false, type:'mouse'};
     else { P.vx = 0; P.vy = 0; }
     P.x = x; P.y = y; P.t = now; P.type = type;
   }
-  addEventListener('pointermove', function(e){ at(e.clientX, e.clientY, e.pointerType); }, {passive:true});
+  var lastPtr = 0;
+  addEventListener('pointermove', function(e){ lastPtr = performance.now(); at(e.clientX, e.clientY, e.pointerType); }, {passive:true});
   addEventListener('pointerdown', function(e){ P.t = 0; at(e.clientX, e.clientY, e.pointerType); P.down = true; }, {passive:true});
   addEventListener('pointerup', function(){ P.down = false; }, {passive:true});
   addEventListener('pointercancel', function(){ P.down = false; }, {passive:true});
   addEventListener('touchstart', function(e){ var t = e.touches[0]; P.t = 0; at(t.clientX, t.clientY, 'touch'); P.down = true; }, {passive:true});
-  addEventListener('touchmove', function(e){ var t = e.touches[0]; at(t.clientX, t.clientY, 'touch'); }, {passive:true});
+  addEventListener('touchmove', function(e){ if (performance.now() - lastPtr < 30) return; var t = e.touches[0]; at(t.clientX, t.clientY, 'touch'); }, {passive:true});
   addEventListener('touchend', function(e){ if (!e.touches.length) P.down = false; }, {passive:true});
 })();
 
@@ -534,13 +539,19 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
       c.fillStyle = ((x/stripe)|0) % 2 ? '#47873a' : '#3a7431';
       c.fillRect(x, FR - 4, stripe, H);
     }
-    var blades = Math.round(W*H/9);
+    var blades = Math.round(W*H/9), TONES = 5, paths = [];
+    for (var k = 0; k < TONES*2; k++) paths.push(new Path2D());
     for (var b = 0; b < blades; b++){
       var bx = Math.random()*W, by = FR + Math.random()*(H - FR);
       var light = (((bx + stripe)/stripe)|0) % 2;
-      c.strokeStyle = 'hsla(' + rnd(92, 110) + ',' + rnd(35, 55) + '%,' + (light ? rnd(30, 44) : rnd(22, 34)) + '%,.55)';
-      c.lineWidth = rnd(.6, 1.2);
-      c.beginPath(); c.moveTo(bx, by); c.lineTo(bx + rnd(-1.2, 1.2), by - rnd(2.5, 5)); c.stroke();
+      var pth = paths[light*TONES + ((Math.random()*TONES)|0)];
+      pth.moveTo(bx, by); pth.lineTo(bx + rnd(-1.2, 1.2), by - rnd(2.5, 5));
+    }
+    c.lineWidth = .9;
+    for (var k2 = 0; k2 < paths.length; k2++){
+      var lt = k2 >= TONES, q = (k2 % TONES)/(TONES - 1);
+      c.strokeStyle = 'hsla(' + (92 + q*18) + ',' + (35 + q*20) + '%,' + (lt ? 30 + q*14 : 22 + q*12) + '%,.55)';
+      c.stroke(paths[k2]);
     }
     // patio
     patio = patioShape();
@@ -772,6 +783,7 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
   function boot(){
     size();
     var still = document.querySelector('.yard-still'); if (still) still.remove();
+    if (Loop.still){ if (hint) hint.remove(); cv.setAttribute('aria-label', 'A paver patio and striped lawn covered in fall leaves.'); }
     draw(0);
     if (!Loop.still) Loop.add(cv, tick);
   }
@@ -899,15 +911,17 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
     });
   });
   function val(id){ return document.getElementById(id).value.trim(); }
-  form.addEventListener('input', function(e){ var f = e.target.closest('.field'); if (f) f.classList.remove('bad'); });
+  form.addEventListener('input', function(e){ var f = e.target.closest('.field'); if (f){ f.classList.remove('bad'); } if (e.target.id === 'name') e.target.removeAttribute('aria-invalid'); });
   form.addEventListener('change', function(){ document.getElementById('f-svc').classList.remove('bad'); });
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var name = val('name'), town = val('town'), details = val('details');
     var picked = Array.prototype.map.call(form.querySelectorAll('input[name=svc]:checked'), function(b){ return LABELS[b.value]; });
     var ok = true, first = null;
+    document.getElementById('name').setAttribute('aria-invalid', !name);
+    document.getElementById('f-svc').setAttribute('aria-invalid', !picked.length && !details);
     if (!name){ document.getElementById('f-name').classList.add('bad'); ok = false; first = first || 'name'; }
-    if (!picked.length && !details){ document.getElementById('f-svc').classList.add('bad'); ok = false; first = first || 'svc0'; }
+    if (!picked.length && !details){ document.getElementById('f-svc').classList.add('bad'); ok = false; first = first || 'f-svc'; }
     if (!ok){ document.getElementById(first).focus(); return; }
     var msg = "Hi Los Compas! I'd like a free estimate.\n" +
       'Name: ' + name +
@@ -915,6 +929,10 @@ function pick(a){ return a[(Math.random()*a.length)|0]; }
       (picked.length ? '\nNeed: ' + picked.join(', ') : '') +
       (details ? '\nDetails: ' + details : '');
     (window.__go || function(u){ location.href = u; })('sms:+17325272548?&body=' + encodeURIComponent(msg));
+    // computers and some in-app browsers can't open texts: offer the same message on WhatsApp
+    var alt = document.getElementById('alt');
+    alt.querySelector('a').href = 'https://wa.me/17325272548?text=' + encodeURIComponent(msg);
+    setTimeout(function(){ if (!document.hidden) alt.hidden = false; }, 1500);
   });
   document.getElementById('yr').textContent = new Date().getFullYear();
 })();
